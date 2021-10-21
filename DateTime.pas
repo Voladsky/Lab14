@@ -6,7 +6,10 @@ else:
     result := false;
 end;
 
-function SecondsInMinute(): integer := 60;
+function SecondsInMinute(): integer;
+begin
+  result := 60;
+end;
 
 begin
   
