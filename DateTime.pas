@@ -40,6 +40,10 @@ begin
     result += DaysInYear(i);
   end;
 end;
+
+///Возвращает число секунд в данном количестве часов
+function SecondsInHours(h: integer): integer := h * 3600;
+
 begin
   
 end.
