@@ -21,6 +21,8 @@ begin
     result := 2;
 end;
 
+function DaysInYear(year: integer): integer := IsLeapYear(year) ? 366 : 365;
+
 begin
   
 end.
