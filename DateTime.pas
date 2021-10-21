@@ -21,8 +21,17 @@ begin
     result := 2;
 end;
 
+///Определяет количество дней в заданном году)
 function DaysInYear(year: integer): integer := IsLeapYear(year) ? 366 : 365;
 
+function DaysInYearRange(firstYear, secondYear: integer): integer;
+begin
+  result := 0;
+  for var i := firstYear to secondYear do
+  begin
+    result += DaysInYear(i);
+  end;
+end;
 begin
   
 end.
